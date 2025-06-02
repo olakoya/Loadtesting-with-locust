@@ -3,7 +3,7 @@ from locust import HttpUser, task, between
 class mysiteTesting(HttpUser):
 
     def on_start(self):
-        self.client.get("/maven-tutorials/how-to-execute-selenium-webdriver-testng-xml-using-maven")
+        self.client.get("/maven-tutorials/executing-selenium-webdriver-testng-xml-using-maven")
 
     @task(2)
     def index(self):
